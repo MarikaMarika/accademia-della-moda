@@ -99,6 +99,209 @@ body{font-size:clamp(22px,2.2vw,30px)}
  .garment{transform:scale(1.12)}
 }
 
+
+/* ===== HOME EXTRA LARGE + LESSON COMPACT TABLET ===== */
+
+/* HOME: ancora più grande */
+#home .hero .eyebrow{
+  font-size:clamp(24px,3vw,34px);
+}
+#home .hero h2{
+  font-size:clamp(50px,7vw,82px);
+  line-height:1;
+}
+#home .hero p{
+  font-size:clamp(30px,4vw,46px);
+  line-height:1.18;
+}
+#home .progressTop{
+  font-size:clamp(26px,3vw,36px);
+}
+#home .module h2{
+  font-size:clamp(36px,4.7vw,54px);
+}
+#home .lessonCard h3{
+  font-size:clamp(31px,3.8vw,44px);
+  line-height:1.08;
+}
+#home .lessonCard p{
+  font-size:clamp(25px,3vw,34px);
+  line-height:1.18;
+}
+#home .status{
+  font-size:clamp(21px,2.5vw,29px);
+}
+#home .primary{
+  font-size:clamp(25px,3vw,34px);
+}
+
+/* LEZIONI: layout verticale più compatto */
+#lesson .lessonHead{
+  padding:16px 20px 14px;
+  margin-top:10px;
+  border-radius:24px;
+}
+#lesson .lessonHead .tag{
+  font-size:clamp(18px,2vw,24px);
+}
+#lesson .lessonHead h2{
+  font-size:clamp(36px,4.8vw,54px);
+  line-height:1;
+  margin:5px 0 6px;
+}
+#lesson .lessonHead p{
+  font-size:clamp(22px,2.7vw,31px);
+  line-height:1.12;
+}
+#lesson .steps{
+  margin-top:10px;
+  gap:6px;
+}
+#lesson .stepPill{
+  font-size:clamp(17px,1.8vw,22px);
+  padding:6px 10px;
+}
+
+/* card esercizio compatta */
+#lesson .card{
+  margin-top:10px;
+  padding:16px 18px;
+  border-radius:24px;
+}
+#lesson .card h3{
+  font-size:clamp(30px,3.8vw,42px);
+  line-height:1.04;
+  margin-bottom:4px;
+}
+#lesson .card p{
+  font-size:clamp(25px,3vw,34px);
+  line-height:1.12;
+  margin:4px 0 8px;
+}
+
+/* meno spazio e card-risposta più basse */
+#lesson .grid{
+  gap:12px;
+  margin-top:10px;
+}
+#lesson .option{
+  min-height:165px;
+  padding:12px;
+  border-radius:22px;
+}
+#lesson .label{
+  font-size:clamp(24px,2.9vw,32px);
+  line-height:1.03;
+  margin-top:8px;
+}
+#lesson .emoji{
+  font-size:clamp(62px,7.5vw,90px);
+}
+#lesson .combo{
+  font-size:clamp(46px,6vw,72px);
+}
+#lesson .word{
+  font-size:clamp(28px,3.5vw,40px);
+}
+#lesson .swatch{
+  width:clamp(76px,9vw,105px);
+  height:clamp(76px,9vw,105px);
+}
+#lesson .pattern{
+  width:clamp(88px,10.5vw,120px);
+  height:clamp(88px,10.5vw,120px);
+}
+#lesson .garment{
+  transform:scale(.88);
+  transform-origin:center;
+  margin-top:-6px;
+  margin-bottom:-4px;
+}
+#lesson .help{
+  margin-top:10px;
+  font-size:clamp(22px,2.7vw,30px);
+  line-height:1.12;
+  padding:12px 15px;
+}
+#lesson .correctMsg{
+  margin-top:10px;
+  font-size:clamp(29px,3.5vw,40px);
+  line-height:1;
+  padding:12px 16px;
+}
+
+/* schermata finale lezione compatta */
+#lesson .doneBox{
+  margin-top:10px;
+  padding:22px;
+}
+#lesson .doneBox .medal{
+  font-size:clamp(70px,9vw,105px);
+}
+#lesson .doneBox h3{
+  font-size:clamp(34px,4.5vw,52px);
+  margin:8px 0;
+}
+#lesson .doneBox p{
+  font-size:clamp(23px,2.8vw,32px)!important;
+}
+#lesson .badge{
+  font-size:clamp(24px,2.9vw,33px);
+}
+
+/* tablet portrait: 3 risposte restano in una riga quando possibile */
+@media (min-width:701px) and (max-width:1000px){
+  #lesson .grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+  #lesson .grid.two{
+    grid-template-columns:repeat(2,1fr);
+  }
+  #lesson .option{
+    min-height:155px;
+    padding:10px;
+  }
+  #lesson .emoji{
+    font-size:68px;
+  }
+  #lesson .combo{
+    font-size:46px;
+  }
+  #lesson .garment{
+    transform:scale(.78);
+    margin-top:-14px;
+    margin-bottom:-12px;
+  }
+  #lesson .label{
+    font-size:clamp(21px,2.5vw,28px);
+    margin-top:4px;
+  }
+}
+
+/* tablet landscape: ancora più compatto */
+@media (min-width:900px){
+  #lesson .lessonHead{
+    padding:12px 18px;
+  }
+  #lesson .card{
+    padding:13px 16px;
+  }
+  #lesson .option{
+    min-height:145px;
+  }
+}
+
+/* telefoni: non comprimere troppo */
+@media (max-width:700px){
+  #lesson .grid,
+  #lesson .grid.two{
+    grid-template-columns:1fr;
+  }
+  #lesson .option{
+    min-height:180px;
+  }
+}
+
 </style>
 </head>
 <body>
